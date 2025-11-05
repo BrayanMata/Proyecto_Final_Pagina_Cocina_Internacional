@@ -1,0 +1,88 @@
+.carrusel
+{
+    width: 100%;
+    height: 90vh;
+    
+    overflow: hidden;
+    background: var(--color-Negro);
+
+    position: relative;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor
+{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+    cursor: pointer;
+}
+
+.flechas
+{
+    z-index: 10;
+    width: 5%;
+    height: 100%;
+    top: 50%;
+    position: absolute;
+    cursor: pointer;
+    background-color: #11111144;
+    transition: 0.5s;
+    user-select: none;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+}
+.flechas:hover
+{
+    width: 10%;
+    background-color: #111111b2;
+}
+.flechas img
+{
+    width: 90%;
+}
+.flecha_Izquierda
+{
+    left: 0;
+}
+.flecha_Derecha
+{
+    right: 0;
+}
+.flecha_Derecha img
+{
+    transform: rotate(180deg)
+}
+
+.imagen_carrusel 
+{
+    min-width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.imagen_carrusel.activo 
+{
+    opacity: 1;
+    position: relative;
+}
+
+.imagen_carrusel img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

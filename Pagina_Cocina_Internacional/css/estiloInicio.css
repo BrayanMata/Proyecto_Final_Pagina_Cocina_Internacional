@@ -1,0 +1,23 @@
+.catalogo
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo
+{
+    width: 100%;
+    background-color: var(--color-Azul);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 20px 5px 15px rgba(0,0,0,0.3);
+}
+.titulo h3
+{
+    width: auto;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: var(--color-Calavera);
+    color: var(--color-Blanco);
+}

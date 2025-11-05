@@ -12,17 +12,17 @@
     <!-- Sección 1: Crear cuenta -->
     <section id="crear-cuenta">
         <h2>Crear cuenta</h2>
-        <form action="php/crear_usuario.php" method="POST">
-            <label>Nombre de usuario:</label>
-            <input type="text" name="nombre_usuario" required>
+        <form action="PHP/crear_usuario.php" method="POST" autocomplete="off">
+            <label for="nombre_usuario">Nombre de usuario:</label>
+            <input type="text" name="nombre_usuario" id="nombre_usuario" required>
 
-            <label>Correo:</label>
-            <input type="email" name="correo" required>
+            <label for="correo">Correo:</label>
+            <input type="email" name="correo" id="correo" required>
 
-            <label>Contraseña:</label>
-            <input type="password" name="contrasena" required>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" id="contrasena" required>
 
-            <label>Tipo de usuario:</label>
+            <label for="tipo_usuario">Tipo de usuario:</label>
             <select name="tipo_usuario" id="tipo_usuario" required onchange="mostrarCamposEstudiante()">
                 <option value="">Seleccione...</option>
                 <option value="Estudiante">Estudiante</option>
@@ -31,10 +31,10 @@
             </select>
 
             <div id="campos_estudiante" style="display:none;">
-                <label>Carrera:</label>
+                <label for="carrera">Carrera:</label>
                 <input type="text" name="carrera" id="carrera">
 
-                <label>Matrícula:</label>
+                <label for="matricula">Matrícula:</label>
                 <input type="text" name="matricula" id="matricula">
             </div>
 
@@ -47,18 +47,18 @@
     <!-- Sección 2: Enviar reseña -->
     <section id="enviar-resena">
         <h2>Dejar una reseña</h2>
-        <form action="php/enviar_resena.php" method="POST">
-            <label>Correo:</label>
-            <input type="email" name="correo" required>
+        <form action="PHP/enviar_resena.php" method="POST" autocomplete="off">
+            <label for="correo_resena">Correo:</label>
+            <input type="email" name="correo" id="correo_resena" required>
 
-            <label>Contraseña:</label>
-            <input type="password" name="contrasena" required>
+            <label for="contrasena_resena">Contraseña:</label>
+            <input type="password" name="contrasena" id="contrasena_resena" required>
 
-            <label>Comentario:</label>
-            <textarea name="comentario" required></textarea>
+            <label for="comentario">Comentario:</label>
+            <textarea name="comentario" id="comentario" required></textarea>
 
-            <label>Calificación (1 a 5):</label>
-            <input type="number" name="calificacion" min="1" max="5" required>
+            <label for="calificacion">Calificación (1 a 5):</label>
+            <input type="number" name="calificacion" id="calificacion" min="1" max="5" required>
 
             <button type="submit">Enviar reseña</button>
         </form>
@@ -70,10 +70,21 @@
     <section id="mostrar-datos">
         <h2>Usuarios y reseñas</h2>
         <div id="contenedor-datos">
-            <?php include("php/mostrar_datos.php"); ?>
+            <?php include("PHP/mostrar_datos.php"); ?>
         </div>
     </section>
 
     <script src="JS/js.js"></script>
+    <script>
+        function mostrarCamposEstudiante() {
+            const tipo = document.getElementById('tipo_usuario').value;
+            const campos = document.getElementById('campos_estudiante');
+            if (tipo === 'Estudiante') {
+                campos.style.display = 'block';
+            } else {
+                campos.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estiloGeneral.css">
+    <link rel="stylesheet" href="css/paletaColores.css">
+    <link rel="stylesheet" href="css/estiloFormulario.css">
+
+    <title>Iniciar Seccion</title>
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+        <a href="index.html" class="logo"><img src="svg/logo.svg" alt="logo"></a>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="crearCuenta.html">Crear una cuenta</a>
+        </div>
+    </header>
+    <main>
+        <section id="iniciar-seccion">
+            <h2>Iniciar seccion</h2>
+            <form action="php/iniciarSeccion.php" method="POST">
+
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" id="correo" required>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" name="contrasena" id="contrasena" required>
+
+                <button type="submit">Iniciar Seccion</button>
+
+                <a href="crearCuenta.html">Aun no tengo una cuenta</a>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

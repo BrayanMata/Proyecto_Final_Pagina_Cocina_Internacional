@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estiloGeneral.css">
+    <link rel="stylesheet" href="css/paletaColores.css">
+    <link rel="stylesheet" href="css/estiloFormulario.css">
+
+    <title>Crear Cuenta</title>
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+        <a href="index.html" class="logo"><img src="svg/logo.svg" alt="logo"></a>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="iniciarSeccion.html">Iniciar sección</a>
+        </div>
+    </header>
+    <main>
+        <section id="crear-cuenta">
+            <h2>Crear cuenta</h2>
+            <form action="php/crearCuenta.php" method="POST">
+                <label for="nombre_usuario">Nombre de usuario:</label>
+                <input type="text" name="nombre_usuario" id="nombre_usuario" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" id="correo" required>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" name="contrasena" id="contrasena" required>
+
+                <label for="tipo_usuario">Tipo de usuario:</label>
+                <select name="tipo_usuario" id="tipo_usuario" required onchange="mostrarCamposEstudiante()">
+                    <option value="">Seleccione...</option>
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Docente">Docente</option>
+                    <option value="Externo">Externo</option>
+                </select>
+
+                <div id="campos_estudiante" style="display:none;">
+                    <label for="carrera">Carrera:</label>
+                    <input type="text" name="carrera" id="carrera">
+
+                    <label for="matricula">Matrícula:</label>
+                    <input type="text" name="matricula" id="matricula">
+                </div>
+
+                <button type="submit">Crear cuenta</button>
+
+                <a href="iniciarSeccion.html">Ya tengo una cuenta</a>
+            </form>
+        </section>
+    </main>
+    
+    <script src="js/formularioEstudiante.js"></script>
+</body>
+</html>
