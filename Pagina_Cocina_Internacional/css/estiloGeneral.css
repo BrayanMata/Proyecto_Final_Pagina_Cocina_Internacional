@@ -83,12 +83,19 @@ header a
 {
     font-size: 25px;
     margin: 0 10px;
+    font-weight: bold;
 }
 header div
 {
     width: 40%;
     display: flex;
     justify-content: flex-end;
+}
+header div a, header nav a
+{
+    background-color: var(--color-Azul);
+    border-radius: 40px;
+    padding: 20PX;
 }
 
 
@@ -135,4 +142,26 @@ main{
 main img
 {
     width: 90%;
+}
+
+footer 
+{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-Azul);
+    padding: 20px;
+}
+footer div
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+footer p
+{
+    color: var(--color-Blanco);
+    text-align: center;
+    margin: 0 5px;
+    font-size: 23px;
 }

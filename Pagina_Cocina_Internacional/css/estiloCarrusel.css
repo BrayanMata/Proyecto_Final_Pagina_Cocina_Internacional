@@ -20,8 +20,6 @@
     height: 100%;
     display: flex;
     transition: transform 0.5s ease-in-out;
-
-    cursor: pointer;
 }
 
 .flechas
@@ -60,6 +58,19 @@
 .flecha_Derecha img
 {
     transform: rotate(180deg)
+}
+
+.cello 
+{
+    z-index: 10;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #ffffffd0 0%, #ffffff73 40%, #ffffff33 80%);
+    box-shadow: 0px 0px 20px #ffffffa6;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
 }
 
 .imagen_carrusel 

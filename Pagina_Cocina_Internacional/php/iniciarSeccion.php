@@ -19,7 +19,9 @@
                 $_SESSION["nombre_usuario"] = $usuario["nombre_usuario"];
                 $_SESSION["tipo_usuario"] = $usuario["tipo_usuario"];
 
-                echo "<script>alert('Inicio de sesión exitoso'); window.location='../index.html';</script>";
+                $_SESSION["mensaje"] = "Inicio de sesión exitoso";
+                header("Location: ../index.php");
+                exit();
             } else {
                 echo "<script>alert('Contraseña incorrecta'); window.location='../iniciarSeccion.html';</script>";
             }

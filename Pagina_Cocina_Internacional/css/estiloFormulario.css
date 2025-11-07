@@ -5,7 +5,8 @@ body
 
 main 
 {
-    height: 90vh;
+    height: auto;
+    padding: 10px;
     background-color: var(--color-Gris);
     margin: 20px 0;
 }

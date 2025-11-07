@@ -34,9 +34,9 @@ main a:hover
 }
 .tarjeta h2
 {
-    height: 140px;
+    height: auto;
     padding: 20px;
-    font-size: 30px;
+    font-size: 25px;
     color: var(--color-Negro);
     display: flex;
     align-items: center;
@@ -44,6 +44,7 @@ main a:hover
 .tarjeta img
 {
     width: 250px;
+    border-radius: 20px;
 }
 .tarjeta:hover
 {

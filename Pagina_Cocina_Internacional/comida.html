@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estiloGeneral.css">
+    <link rel="stylesheet" href="css/paletaColores.css">
+    <link rel="stylesheet" href="css/estiloComida.css">
+
+    <title>Platillo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Restaurantes</a>
+            <a href="#">Comentarios generales</a>
+        </nav>
+        <a href="index.php" class="logo"><img src="svg/Logo.svg" alt="logo"></a>
+        <div>
+            <a href="crearCuenta.html">Crear cuenta</a>
+            <a href="iniciarSeccion.html">Iniciar sección</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="descipcionPlatillo">
+            <img src="svg/Logo.svg" alt="Platillo">
+            <div class="descripcion">
+                <h3>
+                    Sushi 寿司
+                </h3>
+                <p>
+                    Arroz avinagrado con pescado crudo (como salmón, atún o anguila), mariscos, 
+                    vegetales o huevo, envuelto o no en alga nori.
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="comentarios">
+            <div class="datoUsuario">
+                <h3>
+                    Brayan Mata Garay
+                </h3>
+
+                <h3>
+                    Calificacion: 5/5
+                </h3>
+            </div>
+            <div class="comentario">
+                <p>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+                    Esta muy rica la comuda, recomiendo probarla, ñam ñam <br>
+
+                </p>
+            </div>
+        </div>
+
+        <div class="formularioComentario">
+            <div class="datoUsuario">
+                <h3>
+                    Brayan Mata Garay
+                </h3>
+
+                <h3>
+                    <label for="calificacion">Calificación (1 a 5):</label>
+                    <input type="number" name="calificacion" id="calificacion" min="1" max="5" required>
+                </h3>
+            </div>
+
+            <div class="comentario">
+                <textarea name="comentario" id="comentario" required></textarea>
+            </div>
+
+            <button type="submit">Enviar reseña</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="aviso">
+            <p>
+                <b>DISCLEIMER:</b> Este sitio web, es un proyecto universitario que está hecho solo 
+                con fines educativos.
+            </p>
+        </div>
+
+        <div class="datosP">
+            <p><b>Alumno:</b> Brayan Mata Garay. -</p>
+            <p><b>Matricula:</b> 208780. -</p>
+            <p><b>Materia:</b> Programación Integral. -</p>
+            <p><b>Docente:</b> Fernando Palacios Diaz.</p>
+        </div>
+    </footer>
+
+    <script src="js/mostrarPlatillo.js"></script>
+
+</body>
+</html>
