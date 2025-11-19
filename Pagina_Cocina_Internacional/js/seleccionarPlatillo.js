@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }));
 
       // Redirigimos a comida.html
-      window.location.href = "comida.html";
+      window.location.href = "comida.php?platillo=" + nombre;
     });
   });
 });

@@ -1,0 +1,17 @@
+.titulo
+{
+    width: 100%;
+    background-color: var(--color-Azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo h2
+{
+    width: 60%;
+    padding: 10px;
+    background-color: var(--color-Gris);
+    color: var(--color-Negro);
+    border-radius: 20px;
+    text-align: center;
+}

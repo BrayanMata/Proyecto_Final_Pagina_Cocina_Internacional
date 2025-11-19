@@ -1,5 +1,5 @@
 <?php
-session_start();
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -14,11 +14,40 @@ session_start();
     <link rel="stylesheet" href="css/estiloCarrusel.css">
     <link rel="stylesheet" href="css/estiloTarjetas.css">
     
-    <title>Portada</title>
+    <title>Comida Japonesa</title>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJDVBNVLGD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LJDVBNVLGD');
+</script>
+
 <body>
     
-   <?php include('php/sesion.php'); ?>
+   <header>
+        <nav>
+            <a href="restaurante.php">Restaurantes</a>
+            <a href="comentariosGenerales.php">Comentarios generales</a>
+        </nav>
+
+        <a href="index.php" class="logo">
+            <img src="svg/Logo.svg" alt="logo">
+        </a>
+
+        <div>
+            <?php if (isset($_SESSION['nombre_usuario'])): ?>
+                <a href="php/cerrarSeccion.php">Cerrar sesión</a>
+            <?php else: ?>
+                <a href="crearCuenta.html">Crear cuenta</a>
+                <a href="iniciarSeccion.html">Iniciar sesión</a>
+            <?php endif; ?>
+        </div>
+    </header>
 
     <nav class="barra-navegacion">
         <a href="#"><img src="svg/Logo.svg" alt="icono"></a>
@@ -66,32 +95,32 @@ session_start();
             </div>
             
             <div class="tarjetas">
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Sushi 寿司">
                     <h2>Sushi 寿司</h2>
                     <img src="jpg/Sushi.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Sashimi">
                     <h2>Sashimi 刺身</h2>
                     <img src="jpg/Sashimi.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Nigiri 握り寿司">
                     <h2>Nigiri 握り寿司</h2>
                     <img src="jpg/Nigiri.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Maki 巻き寿司">
                     <h2>Maki 巻き寿司</h2>
                     <img src="jpg/Maki.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Chirashi ちらし寿司">
                     <h2>Chirashi ちらし寿司</h2>
                     <img src="jpg/Chirashi.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Temaki 手巻き">
                     <h2>Temaki 手巻き</h2>
                     <img src="jpg/Temaki.jpg" alt="imagen">
                 </a>
@@ -104,22 +133,22 @@ session_start();
             </div>
             
             <div class="tarjetas">
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Ramen ラーメン">
                     <h2>Ramen ラーメン</h2>
                     <img src="jpg/Ramen.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Udon うどん">
                     <h2>Udon うどん</h2>
                     <img src="jpg/Udon.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Soba そば">
                     <h2>Soba そば</h2>
                     <img src="jpg/Soba.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Yakisoba 焼きそば">
                     <h2>Yakisoba 焼きそば</h2>
                     <img src="jpg/Yakisoba.jpg" alt="imagen">
                 </a>
@@ -132,27 +161,27 @@ session_start();
             </div>
             
             <div class="tarjetas">
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Donburi 丼ぶり">
                     <h2>Donburi 丼ぶり</h2>
                     <img src="jpg/Donburi.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Katsudon カツ丼">
                     <h2>Katsudon カツ丼</h2>
                     <img src="jpg/Katsudon.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Onigiri おにぎり">
                     <h2>Onigiri おにぎり</h2>
                     <img src="jpg/Onigiri.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Omurice オムライス">
                     <h2>Omurice オムライス</h2>
                     <img src="jpg/Omurice.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Curry japonés カレーライス">
                     <h2>Curry japonés カレーライス</h2>
                     <img src="jpg/Curry.jpg" alt="imagen">
                 </a>
@@ -165,27 +194,27 @@ session_start();
             </div>
             
             <div class="tarjetas">
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Yakitori 焼き鳥">
                     <h2>Yakitori 焼き鳥</h2>
                     <img src="jpg/Yakitori.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Tonkatsu とんかつ">
                     <h2>Tonkatsu とんかつ</h2>
                     <img src="jpg/Tonkatsu.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Tempura 天ぷら">
                     <h2>Tempura 天ぷら</h2>
                     <img src="jpg/Tempura.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Karaage 唐揚げ">
                     <h2>Karaage 唐揚げ</h2>
                     <img src="jpg/Karaage.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Takoyaki たこ焼き">
                     <h2>Takoyaki たこ焼き</h2>
                     <img src="jpg/Takoyaki.jpg" alt="imagen">
                 </a>
@@ -198,27 +227,27 @@ session_start();
             </div>
             
             <div class="tarjetas">
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Sukiyaki すき焼き">
                     <h2>Sukiyaki すき焼き</h2>
                     <img src="jpg/Sukiyaki.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Shabu-shabu しゃぶしゃぶ">
                     <h2>Shabu-shabu しゃぶしゃぶ</h2>
                     <img src="jpg/Shabu-shabu.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Miso soup 味噌汁">
                     <h2>Miso soup 味噌汁</h2>
                     <img src="jpg/Miso.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Nabe 鍋">
                     <h2>Nabe 鍋</h2>
                     <img src="jpg/Nabe.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Oden おでん">
                     <h2>Oden おでん</h2>
                     <img src="jpg/Oden.jpeg" alt="imagen">
                 </a>
@@ -231,27 +260,27 @@ session_start();
             </div>
             
             <div class="tarjetas">
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Okonomiyaki お好み焼き">
                     <h2>Okonomiyaki お好み焼き</h2>
                     <img src="jpg/Okonomiyaki.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Taiyaki たい焼き">
                     <h2>Taiyaki たい焼き</h2>
                     <img src="jpg/Taiyaki.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Dorayaki どら焼き">
                     <h2>Dorayaki どら焼き</h2>
                     <img src="jpg/Dorayaki.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Dango 団子">
                     <h2>Dango 団子</h2>
                     <img src="jpg/Dango.jpg" alt="imagen">
                 </a>
 
-                <a class="tarjeta" href="comida.html">
+                <a class="tarjeta" href="comida.php?platillo=Yaki onigiri 焼きおにぎり">
                     <h2>Yaki onigiri 焼きおにぎり</h2>
                     <img src="jpg/Yaki-onigiri.jpg" alt="imagen">
                 </a>
@@ -260,6 +289,10 @@ session_start();
     </main>
 
     <footer>
+        <div class="sobresNosotros">
+            <a href="quienesSomos.html"><h3>Quienes Somos</h3></a>
+        </div>
+
         <div class="aviso">
             <p>
                 <b>DISCLEIMER:</b> Este sitio web, es un proyecto universitario que está hecho solo 
@@ -282,10 +315,10 @@ session_start();
 </body>
 
 <?php
-if (isset($_SESSION['mensaje'])) {
-    echo "<script>alert('" . $_SESSION['mensaje'] . "');</script>";
-    unset($_SESSION['mensaje']);
-}
+    if (isset($_SESSION['mensaje'])) {
+        echo "<script>alert('" . $_SESSION['mensaje'] . "');</script>";
+        unset($_SESSION['mensaje']);
+    }
 ?>
 
 </html>

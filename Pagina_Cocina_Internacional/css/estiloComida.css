@@ -1,4 +1,4 @@
-main div
+main div, main form
 {
     width: 90%;
     padding: 20px;
@@ -29,7 +29,15 @@ main div
     flex-direction: column;
 }
 
-.comentarios, .formularioComentario
+.con-comentarios
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comentarios, .formularioComentario, .avisoInvitado
 {
     margin: 20px 0;
     background-color: var(--color-Gris);
@@ -104,4 +112,18 @@ main div
 .formularioComentario button:hover 
 {
     background-color: var(--color-Negro);
+}
+
+main a
+{
+    color: var(--color-Negro);
+}
+main a:hover
+{
+    margin: 20px 0;
+    background-color: var(--color-Azul);
+    border-radius: 20px;
+    border: 5px solid var(--color-Azul);
+    color: var(--color-Blanco);
+    flex-direction: column;
 }

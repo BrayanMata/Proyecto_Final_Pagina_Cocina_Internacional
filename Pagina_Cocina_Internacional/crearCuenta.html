@@ -10,11 +10,23 @@
 
     <title>Crear Cuenta</title>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJDVBNVLGD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LJDVBNVLGD');
+</script>
+
 <body>
     <header>
         <nav>
-            <a href="#">Restaurantes</a>
-            <a href="#">Comentarios generales</a>
+            <a href="restaurante.php">Restaurantes</a>
+            <a href="comentariosGenerales.php">Comentarios generales</a>
+            
         </nav>
         <a href="index.php" class="logo"><img src="svg/Logo.svg" alt="logo"></a>
         <div>
@@ -59,6 +71,10 @@
     </main>
 
     <footer>
+        <div class="sobresNosotros">
+            <a href="quienesSomos.html"><h3>Quienes Somos</h3></a>
+        </div>
+
         <div class="aviso">
             <p>
                 <b>DISCLEIMER:</b> Este sitio web, es un proyecto universitario que está hecho solo 

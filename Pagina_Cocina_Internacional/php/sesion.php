@@ -1,10 +1,10 @@
 <?php
-session_start();
+    session_start();
 ?>
 
 <header>
     <nav>
-        <a href="#">Restaurantes</a>
+        <a href="restaurante.html">Restaurantes</a>
         <a href="#">Comentarios generales</a>
     </nav>
 
